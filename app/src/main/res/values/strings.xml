@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Bootcamp</string>
+    <string name="mainGoButtonText">GO</string>
+    <string name="paste_url">Paste URL</string>
 </resources>
