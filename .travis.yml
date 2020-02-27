@@ -7,8 +7,8 @@ android:
   components:
     # Uncomment the lines below if you want to
     # use the latest revision of Android SDK Tools
-    # - tools
-    # - platform-tools
+    - tools
+    - platform-tools
 
     # The BuildTools version used by your project
     - build-tools-29.0.3
@@ -27,6 +27,3 @@ android:
 
 before_install:
   - chmod +x gradlew # make sure the Gradle wrapper can be executed
-
-script:
-  - ./gradlew build connectedCheck
