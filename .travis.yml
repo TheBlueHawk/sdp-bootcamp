@@ -2,8 +2,6 @@
 language: android
 dist: trusty #Android builds are only supported on the Travis Trusty image
 jdk: openjdk12 # by default, travis runs on Java 8. This forces Java 12.
-before_install:
-  - chmod +x gradlew # make sure the Gradle wrapper can be executed
 
 android:
   components:
@@ -26,3 +24,9 @@ android:
     # Specify at least one system image,
     # if you need to run emulator(s) during your tests
     - sys-img-x86-android-29
+
+before_install:
+  - chmod +x gradlew # make sure the Gradle wrapper can be executed
+
+script:
+  - ./gradlew build connectedCheck
