@@ -1,4 +1,6 @@
 language: android
+before_install:
+  - chmod +x gradlew
 android:
   components:
     # The BuildTools version used by your project (make sure it's exactly the same as in the build.gradle)
